@@ -5,8 +5,8 @@
 package ie
 
 // NewReportType creates a new ReportType IE.
-func NewReportType(upir, erir, usar, dldr int) *IE {
-	return newUint8ValIE(ReportType, uint8((upir<<3)|(erir<<2)|(usar<<1)|(dldr)))
+func NewReportType(sesr, upir, erir, usar, dldr int) *IE {
+	return newUint8ValIE(ReportType, uint8((sesr<<5)|(upir<<3)|(erir<<2)|(usar<<1)|(dldr)))
 }
 
 // ReportType returns ReportType in uint8 if the type of IE matches.

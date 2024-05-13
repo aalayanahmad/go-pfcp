@@ -7,7 +7,7 @@ package ie
 import (
 	"io"
 
-	"github.com/wmnsk/go-pfcp/internal/utils"
+	"github.com/aalayanahmad/go-pfcp/internal/utils"
 )
 
 // NewUserID creates a new UserID IE.

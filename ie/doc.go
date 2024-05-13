@@ -5,5 +5,5 @@
 // Package ie provides the painless handling of of PFCP Information Elements.
 //
 // This document is a work in progress.
-// Read the README.md at https://github.com/wmnsk/go-pfcp for further details.
+// Read the README.md at https://github.com/aalayanahmad/go-pfcp for further details.
 package ie

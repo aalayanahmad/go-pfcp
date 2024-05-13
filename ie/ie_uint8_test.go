@@ -765,7 +765,7 @@ func TestUint8IEs(t *testing.T) {
 			decoderFunc: func(i *ie.IE) (uint8, error) { return i.RDSConfigurationInformation() },
 		}, {
 			description: "ReportType",
-			structured:  ie.NewReportType(1, 1, 1, 1),
+			structured:  ie.NewReportType(0, 1, 1, 1, 1),
 			decoded:     0x0f,
 			decoderFunc: func(i *ie.IE) (uint8, error) { return i.ReportType() },
 		}, {

@@ -811,4 +811,4 @@ _I'm always open to welcome co-authors! Please feel free to talk to me._
 
 ## LICENSE
 
-[MIT](https://github.com/wmnsk/go-pfcp/blob/master/LICENSE)
+[MIT](https://github.com/aalayanahmad/go-pfcp/blob/master/LICENSE)

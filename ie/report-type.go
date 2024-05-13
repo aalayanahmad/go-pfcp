@@ -18,6 +18,16 @@ func (i *IE) ReportType() (uint8, error) {
 	return i.ValueAsUint8()
 }
 
+// HasSESR reports whether an IE has SESR bit.
+func (i *IE) HasSESR() bool {
+	v, err := i.ReportType()
+	if err != nil {
+		return false
+	}
+
+	return has6thBit(v)
+}
+
 // HasUPIR reports whether an IE has UPIR bit.
 func (i *IE) HasUPIR() bool {
 	v, err := i.ReportType()

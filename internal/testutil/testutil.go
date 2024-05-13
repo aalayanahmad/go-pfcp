@@ -8,8 +8,8 @@ package testutil
 import (
 	"testing"
 
+	"github.com/aalayanahmad/go-pfcp/message"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/message"
 )
 
 // Serializable is just for testing Message. Don't use this.

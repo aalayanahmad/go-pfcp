@@ -4,7 +4,7 @@
 
 package ie
 
-import "github.com/wmnsk/go-pfcp/internal/utils"
+import "github.com/aalayanahmad/go-pfcp/internal/utils"
 
 // NewNetworkInstance creates a new NetworkInstance IE.
 func NewNetworkInstance(instance string) *IE {

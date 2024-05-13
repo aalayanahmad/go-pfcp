@@ -5,7 +5,7 @@
 package message
 
 import (
-	"github.com/wmnsk/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/ie"
 )
 
 // SessionModificationRequest is a SessionModificationRequest formed PFCP Header and its IEs above.

@@ -7,8 +7,8 @@ package ie_test
 import (
 	"testing"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestByteArrayIEs(t *testing.T) {

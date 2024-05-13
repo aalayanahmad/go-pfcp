@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestUint8IEs(t *testing.T) {

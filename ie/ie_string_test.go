@@ -7,8 +7,8 @@ package ie_test
 import (
 	"testing"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestStringIEs(t *testing.T) {
@@ -30,8 +30,8 @@ func TestStringIEs(t *testing.T) {
 			decoderFunc: func(i *ie.IE) (string, error) { return i.APNDNN() },
 		}, {
 			description: "ApplicationID",
-			structured:  ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
-			decoded:     "https://github.com/wmnsk/go-pfcp/",
+			structured:  ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
+			decoded:     "https://github.com/aalayanahmad/go-pfcp/",
 			decoderFunc: func(i *ie.IE) (string, error) { return i.ApplicationID() },
 		}, {
 			description: "ApplicationInstanceID",

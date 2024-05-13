@@ -7,7 +7,7 @@ package message
 import (
 	"io"
 
-	"github.com/wmnsk/go-pfcp/internal/logger"
+	"github.com/aalayanahmad/go-pfcp/internal/logger"
 )
 
 // MessageType definitions.

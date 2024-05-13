@@ -7,9 +7,9 @@ package message_test
 import (
 	"testing"
 
-	"github.com/wmnsk/go-pfcp/message"
+	"github.com/aalayanahmad/go-pfcp/message"
 
-	"github.com/wmnsk/go-pfcp/internal/testutil"
+	"github.com/aalayanahmad/go-pfcp/internal/testutil"
 )
 
 func TestVersionNotSupportedResponse(t *testing.T) {

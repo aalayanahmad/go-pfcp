@@ -3,7 +3,7 @@ package ie_test
 import (
 	"testing"
 
-	"github.com/wmnsk/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/ie"
 )
 
 func FuzzParse(f *testing.F) {

@@ -5,8 +5,8 @@ import (
 	"net"
 	"testing"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestParseMACAddressFields(t *testing.T) {

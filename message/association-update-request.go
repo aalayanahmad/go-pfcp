@@ -5,7 +5,7 @@
 package message
 
 import (
-	"github.com/wmnsk/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/ie"
 )
 
 // AssociationUpdateRequest is a AssociationUpdateRequest formed PFCP Header and its IEs above.

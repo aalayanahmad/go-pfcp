@@ -9,10 +9,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wmnsk/go-pfcp/ie"
-	"github.com/wmnsk/go-pfcp/message"
+	"github.com/aalayanahmad/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/message"
 
-	"github.com/wmnsk/go-pfcp/internal/testutil"
+	"github.com/aalayanahmad/go-pfcp/internal/testutil"
 )
 
 func TestSessionEstablishmentRequest(t *testing.T) {
@@ -37,7 +37,7 @@ func TestSessionEstablishmentRequest(t *testing.T) {
 						ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 						ie.NewTrafficEndpointID(0x01),
 						ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-						ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+						ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 						ie.NewEthernetPDUSessionInformation(0x01),
 						ie.NewEthernetPacketFilter(
 							ie.NewEthernetFilterID(0xffffffff),
@@ -463,7 +463,7 @@ func TestSessionEstablishmentRequest(t *testing.T) {
 						ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 						ie.NewTrafficEndpointID(0x01),
 						ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-						ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+						ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 						ie.NewEthernetPDUSessionInformation(0x01),
 						ie.NewEthernetPacketFilter(
 							ie.NewEthernetFilterID(0xffffffff),
@@ -504,7 +504,7 @@ func TestSessionEstablishmentRequest(t *testing.T) {
 						ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 						ie.NewTrafficEndpointID(0x01),
 						ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-						ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+						ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 						ie.NewEthernetPDUSessionInformation(0x01),
 						ie.NewEthernetPacketFilter(
 							ie.NewEthernetFilterID(0xffffffff),

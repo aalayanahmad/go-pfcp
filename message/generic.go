@@ -7,7 +7,7 @@ package message
 import (
 	"fmt"
 
-	"github.com/wmnsk/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/ie"
 )
 
 // Generic is a Generic formed PFCP Header and its IEs above.

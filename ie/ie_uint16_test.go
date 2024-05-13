@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestUint16IEs(t *testing.T) {
@@ -176,7 +176,7 @@ func TestUint16IEs(t *testing.T) {
 		}, {
 			description: "PDRID/ApplicationDetectionInformation",
 			structured: ie.NewApplicationDetectionInformation(
-				ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+				ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 				ie.NewPDRID(0xffff),
 			),
 			decoded:     0xffff,
@@ -186,7 +186,7 @@ func TestUint16IEs(t *testing.T) {
 			structured: ie.NewUsageReportWithinSessionReportRequest(
 				ie.NewURRID(0xffffffff),
 				ie.NewApplicationDetectionInformation(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewPDRID(0xffff),
 				),
 			),

@@ -5,7 +5,7 @@
 package message
 
 import (
-	"github.com/wmnsk/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/ie"
 )
 
 // SessionDeletionRequest is a SessionDeletionRequest formed PFCP Header and its IEs above.

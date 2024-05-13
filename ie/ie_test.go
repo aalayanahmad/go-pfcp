@@ -10,8 +10,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/aalayanahmad/go-pfcp/ie"
 	"github.com/google/go-cmp/cmp"
-	"github.com/wmnsk/go-pfcp/ie"
 )
 
 func TestIEs(t *testing.T) {
@@ -43,7 +43,7 @@ func TestIEs(t *testing.T) {
 					ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 					ie.NewTrafficEndpointID(0x01),
 					ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewEthernetPDUSessionInformation(0x01),
 					ie.NewEthernetPacketFilter(
 						ie.NewEthernetFilterID(0xffffffff),
@@ -155,7 +155,7 @@ func TestIEs(t *testing.T) {
 				ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 				ie.NewTrafficEndpointID(0x01),
 				ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-				ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+				ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 				ie.NewEthernetPDUSessionInformation(0x01),
 				ie.NewEthernetPacketFilter(
 					ie.NewEthernetFilterID(0xffffffff),
@@ -218,7 +218,7 @@ func TestIEs(t *testing.T) {
 				ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 				ie.NewTrafficEndpointID(0x01),
 				nil,
-				ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+				ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 				ie.NewEthernetPDUSessionInformation(0x01),
 				ie.NewEthernetPacketFilter(
 					ie.NewEthernetFilterID(0xffffffff),
@@ -524,7 +524,7 @@ func TestIEs(t *testing.T) {
 					ie.NewUEIPAddress(0x02, "127.0.0.1", "", 0, 0),
 					ie.NewTrafficEndpointID(0x01),
 					ie.NewSDFFilter("aaaaaaaa", "bb", "cccc", "ddd", 0xffffffff),
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewEthernetPDUSessionInformation(0x01),
 					ie.NewEthernetPacketFilter(
 						ie.NewEthernetFilterID(0xffffffff),
@@ -931,7 +931,7 @@ func TestIEs(t *testing.T) {
 			},
 		}, {
 			"ApplicationID",
-			ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+			ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 			[]byte{0x00, 0x18, 0x00, 0x21, 0x68, 0x74, 0x74, 0x70, 0x73, 0x3a, 0x2f, 0x2f, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x77, 0x6d, 0x6e, 0x73, 0x6b, 0x2f, 0x67, 0x6f, 0x2d, 0x70, 0x66, 0x63, 0x70, 0x2f},
 		}, {
 			"GateStatus/OpenOpen",
@@ -1015,11 +1015,11 @@ func TestIEs(t *testing.T) {
 			[]byte{0x00, 0x25, 0x00, 0x03, 0x11, 0x22, 0x00},
 		}, {
 			"RedirectInformation/URL/1",
-			ie.NewRedirectInformation(ie.RedirectAddrURL, "https://github.com/wmnsk/go-pfcp/"),
+			ie.NewRedirectInformation(ie.RedirectAddrURL, "https://github.com/aalayanahmad/go-pfcp/"),
 			[]byte{0x00, 0x26, 0x00, 0x26, 0x02, 0x00, 0x21, 0x68, 0x74, 0x74, 0x70, 0x73, 0x3a, 0x2f, 0x2f, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x77, 0x6d, 0x6e, 0x73, 0x6b, 0x2f, 0x67, 0x6f, 0x2d, 0x70, 0x66, 0x63, 0x70, 0x2f, 0x00, 0x00},
 		}, {
 			"RedirectInformation/URL/2",
-			ie.NewRedirectInformation(ie.RedirectAddrURL, "https://github.com/wmnsk/go-pfcp/", "https://github.com/wmnsk/go-pfcp/"),
+			ie.NewRedirectInformation(ie.RedirectAddrURL, "https://github.com/aalayanahmad/go-pfcp/", "https://github.com/aalayanahmad/go-pfcp/"),
 			[]byte{
 				0x00, 0x26, 0x00, 0x47, 0x02,
 				0x00, 0x21, 0x68, 0x74, 0x74, 0x70, 0x73, 0x3a, 0x2f, 0x2f, 0x67, 0x69, 0x74, 0x68, 0x75, 0x62, 0x2e, 0x63, 0x6f, 0x6d, 0x2f, 0x77, 0x6d, 0x6e, 0x73, 0x6b, 0x2f, 0x67, 0x6f, 0x2d, 0x70, 0x66, 0x63, 0x70, 0x2f,
@@ -1163,7 +1163,7 @@ func TestIEs(t *testing.T) {
 		}, {
 			"ApplicationIDsPFDs",
 			ie.NewApplicationIDsPFDs(
-				ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+				ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 				ie.NewPFDContext(
 					ie.NewPFDContents("aa", "bb", "cc", "dd", "ee", []string{"11", "22"}, []string{"33", "44"}, []string{"55", "66"}),
 				),
@@ -1311,7 +1311,7 @@ func TestIEs(t *testing.T) {
 		}, {
 			"ApplicationDetectionInformation",
 			ie.NewApplicationDetectionInformation(
-				ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+				ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 				ie.NewApplicationInstanceID("go-pfcp"),
 				ie.NewFlowInformation(ie.FlowDirectionDownlink, "go-pfcp"),
 				ie.NewPDRID(0xffff),
@@ -1507,7 +1507,7 @@ func TestIEs(t *testing.T) {
 				ie.NewVolumeMeasurement(0x3f, 0x1111111111111111, 0x2222222222222222, 0x3333333333333333, 0x4444444444444444, 0x5555555555555555, 0x6666666666666666),
 				ie.NewDurationMeasurement(10*time.Second),
 				ie.NewApplicationDetectionInformation(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewApplicationInstanceID("go-pfcp"),
 					ie.NewFlowInformation(ie.FlowDirectionDownlink, "go-pfcp"),
 					ie.NewPDRID(0xffff),

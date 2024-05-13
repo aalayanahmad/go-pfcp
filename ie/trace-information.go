@@ -8,7 +8,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/wmnsk/go-pfcp/internal/utils"
+	"github.com/aalayanahmad/go-pfcp/internal/utils"
 )
 
 // NewTraceInformation creates a new TraceInformation IE.

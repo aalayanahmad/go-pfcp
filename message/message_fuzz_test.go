@@ -3,7 +3,7 @@ package message_test
 import (
 	"testing"
 
-	"github.com/wmnsk/go-pfcp/message"
+	"github.com/aalayanahmad/go-pfcp/message"
 )
 
 func FuzzParse(f *testing.F) {

@@ -7,10 +7,10 @@ package message_test
 import (
 	"testing"
 
-	"github.com/wmnsk/go-pfcp/ie"
-	"github.com/wmnsk/go-pfcp/message"
+	"github.com/aalayanahmad/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/message"
 
-	"github.com/wmnsk/go-pfcp/internal/testutil"
+	"github.com/aalayanahmad/go-pfcp/internal/testutil"
 )
 
 func TestPFDManagementRequest(t *testing.T) {
@@ -19,7 +19,7 @@ func TestPFDManagementRequest(t *testing.T) {
 			Description: "Empty PFDContent",
 			Structured: message.NewPFDManagementRequest(seq,
 				ie.NewApplicationIDsPFDs(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewPFDContext(
 						ie.NewPFDContents("", "", "", "", "", []string{}, []string{}, []string{}),
 					),
@@ -77,7 +77,7 @@ func TestPFDManagementRequest(t *testing.T) {
 			Description: "Single IE",
 			Structured: message.NewPFDManagementRequest(seq,
 				ie.NewApplicationIDsPFDs(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewPFDContext(
 						ie.NewPFDContents("aa", "bb", "cc", "dd", "ee", []string{"11", "22"}, []string{"33", "44"}, []string{"55", "66"}),
 					),
@@ -105,13 +105,13 @@ func TestPFDManagementRequest(t *testing.T) {
 			Description: "Multiple IEs",
 			Structured: message.NewPFDManagementRequest(seq,
 				ie.NewApplicationIDsPFDs(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewPFDContext(
 						ie.NewPFDContents("aa", "bb", "cc", "dd", "ee", []string{"11", "22"}, []string{"33", "44"}, []string{"55", "66"}),
 					),
 				),
 				ie.NewApplicationIDsPFDs(
-					ie.NewApplicationID("https://github.com/wmnsk/go-pfcp/"),
+					ie.NewApplicationID("https://github.com/aalayanahmad/go-pfcp/"),
 					ie.NewPFDContext(
 						ie.NewPFDContents("aa", "bb", "cc", "dd", "ee", []string{"11", "22"}, []string{"33", "44"}, []string{"55", "66"}),
 					),

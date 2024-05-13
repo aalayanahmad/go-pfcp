@@ -9,8 +9,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/wmnsk/go-pfcp/internal/logger"
-	"github.com/wmnsk/go-pfcp/internal/utils"
+	"github.com/aalayanahmad/go-pfcp/internal/logger"
+	"github.com/aalayanahmad/go-pfcp/internal/utils"
 )
 
 // IE Type definitions.

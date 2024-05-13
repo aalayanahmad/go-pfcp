@@ -8,10 +8,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/wmnsk/go-pfcp/ie"
-	"github.com/wmnsk/go-pfcp/message"
+	"github.com/aalayanahmad/go-pfcp/ie"
+	"github.com/aalayanahmad/go-pfcp/message"
 
-	"github.com/wmnsk/go-pfcp/internal/testutil"
+	"github.com/aalayanahmad/go-pfcp/internal/testutil"
 )
 
 func TestNodeReportRequest(t *testing.T) {

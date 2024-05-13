@@ -9,7 +9,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/wmnsk/go-pfcp/internal/utils"
+	"github.com/aalayanahmad/go-pfcp/internal/utils"
 )
 
 // NodeID definitions.

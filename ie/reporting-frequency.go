@@ -50,3 +50,13 @@ func (i *IE) HasEVETT() bool {
 
 	return has1stBit(v)
 }
+
+// HasEVETT reports whether an IE has EVETT bit.
+func (i *IE) HasPeriodic() bool {
+	v, err := i.ReportingFrequency()
+	if err != nil {
+		return false
+	}
+
+	return has2ndBit(v)
+}
